@@ -1,0 +1,130 @@
+INFO 2022-02-16 19:31:34,379 - ---------- RUN STARTING ----------
+INFO 2022-02-16 19:31:34,384 - ---------- LOADING DATA ----------
+INFO 2022-02-16 19:31:38,491 - Found latt/long for airport of Reykjavík
+INFO 2022-02-16 19:31:47,058 - Found latt/long for airport of Dresden
+INFO 2022-02-16 19:31:47,940 - Found latt/long for airport of Hamburg
+INFO 2022-02-16 19:31:48,061 - Found latt/long for airport of Berlin
+INFO 2022-02-16 19:31:48,555 - Found latt/long for airport of Düsseldorf
+INFO 2022-02-16 19:31:48,788 - Found latt/long for airport of Nuremberg
+INFO 2022-02-16 19:31:49,126 - Found latt/long for airport of Stuttgart
+INFO 2022-02-16 19:31:49,525 - Found latt/long for airport of Bremen
+INFO 2022-02-16 19:31:51,624 - Found latt/long for airport of Essen
+INFO 2022-02-16 19:32:09,326 - Found latt/long for airport of Belfast
+INFO 2022-02-16 19:32:09,760 - Found latt/long for airport of Coventry
+INFO 2022-02-16 19:32:09,975 - Found latt/long for airport of Leicester
+INFO 2022-02-16 19:32:13,010 - Found latt/long for airport of Swansea
+INFO 2022-02-16 19:32:13,340 - Found latt/long for airport of Luton
+INFO 2022-02-16 19:32:13,463 - Found latt/long for airport of Plymouth
+INFO 2022-02-16 19:32:13,583 - Found latt/long for airport of Bournemouth
+INFO 2022-02-16 19:32:15,792 - Found latt/long for airport of Southend-on-Sea
+INFO 2022-02-16 19:32:16,816 - Found latt/long for airport of Blackpool
+INFO 2022-02-16 19:32:18,049 - Found latt/long for airport of Newcastle
+INFO 2022-02-16 19:32:19,262 - Found latt/long for airport of Kirkwall
+INFO 2022-02-16 19:32:19,749 - Found latt/long for airport of Aberdeen
+INFO 2022-02-16 19:32:21,256 - Found latt/long for airport of Dundee
+INFO 2022-02-16 19:32:21,984 - Found latt/long for airport of Cambridge
+INFO 2022-02-16 19:32:22,356 - Found latt/long for airport of Norwich
+INFO 2022-02-16 19:32:22,785 - Found latt/long for airport of Sheffield
+INFO 2022-02-16 19:32:23,003 - Found latt/long for airport of Exeter
+INFO 2022-02-16 19:32:23,112 - Found latt/long for airport of Bristol
+INFO 2022-02-16 19:32:23,235 - Found latt/long for airport of Oxford
+INFO 2022-02-16 19:32:30,820 - Found latt/long for airport of Dublin
+INFO 2022-02-16 19:32:31,883 - Found latt/long for airport of Copenhagen
+INFO 2022-02-16 19:32:41,478 - Found latt/long for airport of Warsaw
+INFO 2022-02-16 19:32:44,611 - Found latt/long for airport of Gothenburg
+INFO 2022-02-16 19:32:52,806 - Found latt/long for airport of Stockholm
+INFO 2022-02-16 19:33:01,399 - Found latt/long for airport of Santa Cruz de Tenerife
+INFO 2022-02-16 19:33:04,222 - Found latt/long for airport of Alexandria
+INFO 2022-02-16 19:33:13,896 - Found latt/long for airport of Santander
+INFO 2022-02-16 19:33:16,595 - Found latt/long for airport of Toulouse
+INFO 2022-02-16 19:33:25,151 - Found latt/long for airport of Calvi
+INFO 2022-02-16 19:33:25,380 - Found latt/long for airport of Ajaccio
+INFO 2022-02-16 19:33:26,764 - Found latt/long for airport of Geneva
+INFO 2022-02-16 19:33:29,318 - Found latt/long for airport of Lyon
+INFO 2022-02-16 19:33:30,225 - Found latt/long for airport of Nice
+INFO 2022-02-16 19:33:36,959 - Found latt/long for airport of Lille
+INFO 2022-02-16 19:33:48,770 - Found latt/long for airport of Santorini
+INFO 2022-02-16 19:33:54,070 - Found latt/long for airport of Torino
+INFO 2022-02-16 19:33:54,178 - Found latt/long for airport of Milan
+INFO 2022-02-16 19:33:57,756 - Found latt/long for airport of Venice
+INFO 2022-02-16 19:33:58,915 - Found latt/long for airport of Naples
+INFO 2022-02-16 19:33:59,363 - Found latt/long for airport of Rome
+INFO 2022-02-16 19:34:00,523 - Found latt/long for airport of Prague
+INFO 2022-02-16 19:34:08,747 - Found latt/long for airport of Lisbon
+INFO 2022-02-16 19:34:10,410 - Found latt/long for airport of Zurich
+INFO 2022-02-16 19:34:22,989 - Found latt/long for airport of Athens
+INFO 2022-02-16 19:34:30,176 - Found latt/long for airport of Oslo
+INFO 2022-02-16 19:34:33,258 - Found latt/long for airport of Nottingham
+INFO 2022-02-16 19:34:34,742 - Found latt/long for airport of Penzance
+INFO 2022-02-16 19:35:00,408 - Found latt/long for airport of London
+INFO 2022-02-16 19:35:00,650 - Found latt/long for airport of Helsinki
+INFO 2022-02-16 19:35:11,759 - Found latt/long for airport of Cologne
+INFO 2022-02-16 19:35:13,307 - Found latt/long for airport of Glasgow
+INFO 2022-02-16 19:35:25,651 - Found latt/long for airport of Salford
+INFO 2022-02-16 19:35:33,034 - Found latt/long for airport of Madrid
+INFO 2022-02-16 19:35:36,732 - Found latt/long for airport of Budapest
+INFO 2022-02-16 19:35:47,558 - Found temperature for Reykjavík
+INFO 2022-02-16 19:35:49,652 - Found temperature for Dresden
+INFO 2022-02-16 19:35:51,760 - Found temperature for Hamburg
+INFO 2022-02-16 19:35:54,109 - Found temperature for Berlin
+INFO 2022-02-16 19:35:56,086 - Found temperature for Düsseldorf
+INFO 2022-02-16 19:35:58,354 - Found temperature for Nuremberg
+INFO 2022-02-16 19:36:00,268 - Found temperature for Stuttgart
+INFO 2022-02-16 19:36:02,479 - Found temperature for Bremen
+INFO 2022-02-16 19:36:05,262 - Found temperature for Essen
+INFO 2022-02-16 19:36:09,163 - Found temperature for Belfast
+INFO 2022-02-16 19:36:11,976 - Found temperature for Coventry
+INFO 2022-02-16 19:36:13,655 - Found temperature for Leicester
+INFO 2022-02-16 19:36:15,652 - Found temperature for Swansea
+INFO 2022-02-16 19:36:17,375 - Found temperature for Luton
+INFO 2022-02-16 19:36:20,833 - Found temperature for Plymouth
+INFO 2022-02-16 19:36:23,079 - Found temperature for Bournemouth
+INFO 2022-02-16 19:36:25,367 - Found temperature for Southend-on-Sea
+INFO 2022-02-16 19:36:28,619 - Found temperature for Blackpool
+INFO 2022-02-16 19:36:30,970 - Found temperature for Newcastle
+INFO 2022-02-16 19:36:33,372 - Found temperature for Kirkwall
+INFO 2022-02-16 19:36:35,270 - Found temperature for Aberdeen
+INFO 2022-02-16 19:36:37,569 - Found temperature for Dundee
+INFO 2022-02-16 19:36:40,471 - Found temperature for Cambridge
+INFO 2022-02-16 19:36:42,558 - Found temperature for Norwich
+INFO 2022-02-16 19:36:45,617 - Found temperature for Sheffield
+INFO 2022-02-16 19:36:47,568 - Found temperature for Exeter
+INFO 2022-02-16 19:36:49,584 - Found temperature for Bristol
+INFO 2022-02-16 19:36:52,076 - Found temperature for Oxford
+INFO 2022-02-16 19:36:53,972 - Found temperature for Dublin
+INFO 2022-02-16 19:36:56,961 - Found temperature for Copenhagen
+INFO 2022-02-16 19:36:58,762 - Found temperature for Warsaw
+INFO 2022-02-16 19:37:01,900 - Found temperature for Gothenburg
+INFO 2022-02-16 19:37:04,762 - Found temperature for Stockholm
+INFO 2022-02-16 19:37:08,041 - Found temperature for Santa Cruz de Tenerife
+INFO 2022-02-16 19:37:10,965 - Found temperature for Alexandria
+INFO 2022-02-16 19:37:14,288 - Found temperature for Santander
+INFO 2022-02-16 19:37:16,134 - Found temperature for Toulouse
+INFO 2022-02-16 19:37:19,159 - Found temperature for Calvi
+INFO 2022-02-16 19:37:21,987 - Found temperature for Ajaccio
+INFO 2022-02-16 19:37:24,676 - Found temperature for Geneva
+INFO 2022-02-16 19:37:27,281 - Found temperature for Lyon
+INFO 2022-02-16 19:37:30,059 - Found temperature for Nice
+INFO 2022-02-16 19:37:32,573 - Found temperature for Lille
+INFO 2022-02-16 19:37:35,794 - Found temperature for Santorini
+INFO 2022-02-16 19:37:38,048 - Found temperature for Torino
+INFO 2022-02-16 19:37:40,873 - Found temperature for Milan
+INFO 2022-02-16 19:37:42,673 - Found temperature for Venice
+INFO 2022-02-16 19:37:44,810 - Found temperature for Naples
+INFO 2022-02-16 19:37:48,167 - Found temperature for Rome
+INFO 2022-02-16 19:37:50,488 - Found temperature for Prague
+INFO 2022-02-16 19:37:53,304 - Found temperature for Lisbon
+INFO 2022-02-16 19:37:55,165 - Found temperature for Zurich
+INFO 2022-02-16 19:37:58,220 - Found temperature for Athens
+INFO 2022-02-16 19:38:00,770 - Found temperature for Oslo
+INFO 2022-02-16 19:38:03,758 - Found temperature for Nottingham
+INFO 2022-02-16 19:38:06,471 - Found temperature for Penzance
+INFO 2022-02-16 19:38:08,868 - Found temperature for London
+INFO 2022-02-16 19:38:11,670 - Found temperature for Helsinki
+INFO 2022-02-16 19:38:14,811 - Found temperature for Cologne
+INFO 2022-02-16 19:38:17,882 - Found temperature for Glasgow
+INFO 2022-02-16 19:38:19,830 - Found temperature for Salford
+INFO 2022-02-16 19:38:21,658 - Found temperature for Madrid
+INFO 2022-02-16 19:38:23,593 - Found temperature for Budapest
+INFO 2022-02-16 19:38:23,621 - ---------- LOADING DATA COMPLETED ----------
+INFO 2022-02-16 19:38:23,621 - ---------- RUN COMPLETED ----------
