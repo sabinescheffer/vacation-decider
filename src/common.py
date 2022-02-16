@@ -1,12 +1,11 @@
 import logging
 import logging.config
+
 import os
-from datetime import datetime, date
 from os import path
 
-import yaml
+from datetime import datetime, date
 
-import logging.config
 
 def generate_log_structure():
     """Generate logs structure."""
@@ -17,19 +16,13 @@ def generate_log_structure():
     filename = f'{datetime.now()}_logs.txt'
     return main_folder + filename
 
-def setup_logging(default_path='logging.yaml', default_level=logging.INFO):
+def setup_logging():
     """logging setup"""
+    # Creating and Configuring Logger
 
-    path = default_path
-    if os.path.exists(path):
-        with open(path, 'rt') as f:
-            try:
-                config = yaml.safe_load(f.read())
-                logging.config.dictConfig(config)
-            except Exception as e:
-                print(e)
-                print('Error in Logging Configuration. Using default configs')
-                logging.basicConfig(level=default_level)
-    else:
-        logging.basicConfig(level=default_level)
-        print('Failed to load configuration file. Using default configs')
+    Log_Format = "%(levelname)s %(asctime)s - %(message)s"
+    filename =  f'data/logs/{date.today()}/{datetime.now()}_logs.txt'
+    logging.basicConfig(filename=filename,
+                        filemode="w",
+                        format=Log_Format,
+                        level=logging.INFO)
