@@ -2,4 +2,8 @@ time_period:
     start_date: '2021-04-11'
     end_date: '2021-04-16'
 
-countries: ['Austria', 'Belgium', 'Cape Verde', 'Croatia','Cyprus', 'Czech Republic', 'Denmark', 'Egypt', 'Finland', 'France', 'Georgia', 'Germany', 'Gibraltar', 'Greece', 'Greenland', 'Grenada', 'Hungary', 'Iceland', 'Ireland', 'Italy', 'Lithuania', 'Luxembourg', 'Macedonia', 'Malta', 'Moldova', 'Mongolia', 'Montenegro', 'Montserrat', 'Morocco', 'Netherlands', 'Norway', 'Oman',  'Poland', 'Portugal','Spain',  'Sweden', 'Switzerland', 'Tunisia', 'Turkey', 'United Kingdom']
+countries: ['Austria', 'Belgium', 'Cape Verde', 'Croatia','Cyprus', 'Czech Republic', 'Denmark', 'Egypt',
+            'Finland', 'France', 'Georgia', 'Germany', 'Gibraltar', 'Greece', 'Greenland', 'Grenada', 'Hungary',
+            'Iceland', 'Ireland', 'Italy', 'Lithuania', 'Luxembourg', 'Macedonia', 'Malta', 'Moldova', 'Mongolia',
+            'Montenegro', 'Montserrat', 'Morocco', 'Netherlands', 'Norway', 'Oman',  'Poland', 'Portugal','Spain',
+            'Sweden', 'Switzerland', 'Tunisia', 'Turkey', 'United Kingdom']
