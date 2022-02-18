@@ -1,42 +1,42 @@
 #!/usr/bin/env python
-
-import csv
 import yaml
 import logging
+import webbrowser
+from flask import Flask
 
 from common import generate_log_structure
 from common import setup_logging
 
 from tools.get_temperatures import GetTemperatures
+from tools.create_map import CreateMap
 
 generate_log_structure()
 setup_logging()
 logger = logging.getLogger(__name__)
 
+app = Flask(__name__)
 
-# Run commands
-def main():
+@app.route('/')
+def index():
     logger.info('---------- RUN STARTING ----------')
 
     with open('/Users/sabinescheffer/dev/vacation-decider/config.yaml', 'r') as c:
         config = yaml.load(c, Loader=yaml.FullLoader)
 
-    temperatures = GetTemperatures(config)
-
     logger.info('---------- LOADING DATA ----------')
 
-    temperatures.create_dataframe().to_csv(
-        f"data/temperatures_{config['time_period']['start_date']}_{config['time_period']['end_date']}.csv",
-        index=False,
-        quoting=csv.QUOTE_NONNUMERIC,
-        quotechar='"')
+    temperatures = GetTemperatures(config)
+    df = temperatures.create_dataframe()
 
     logger.info('---------- LOADING DATA COMPLETED ----------')
 
-    logger.info('---------- RUN COMPLETED ----------')
+    logger.info('---------- CREATING MAP ----------')
 
+    map = CreateMap(df)
+    return map.create_map()
 
-if __name__ == '__main__':
-    main()
-
+if __name__ == "__main__":
+    webbrowser.open_new('http://127.0.0.1:5000/')
+    app.run(debug=True,
+            use_reloader=False)
 
