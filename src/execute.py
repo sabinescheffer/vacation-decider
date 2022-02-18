@@ -20,7 +20,7 @@ app = Flask(__name__)
 def index():
     logger.info('---------- RUN STARTING ----------')
 
-    with open('../config.yaml', 'r') as c:
+    with open('config.yaml', 'r') as c:
         config = yaml.load(c, Loader=yaml.FullLoader)
 
     logger.info('---------- LOADING DATA ----------')
