@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import logging
 import folium
+import numpy as np
 
 logger = logging.getLogger(__name__)
 
@@ -18,8 +19,10 @@ class CreateMap:
         return colormap
 
     def _create_map_index(self):
-        start_latt_long = (48.5, 4.8)
-        folium_map = folium.Map(location=start_latt_long, zoom_start=4)
+        avg_lat = np.mean([float(i) for i in self.lat])
+        avg_long = np.mean([float(i) for i in self.long])
+        start_latt_long = (avg_lat, avg_long)
+        folium_map = folium.Map(location=start_latt_long, zoom_start=3)
         return folium_map
 
     def create_map(self):
