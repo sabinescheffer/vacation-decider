@@ -167,3 +167,6 @@ Loading complete
 # data folders
 data/
 
+# config file
+config.yaml
+
