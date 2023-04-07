@@ -24,58 +24,38 @@ class GetTemperatures:
         self.end_date = config['time_period']['end_date']
         self.countries = config['countries']
         self.airports_url = 'https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat'
-        self.weather_url = 'https://www.metaweather.com/api/location/'
+        self.weather_url = 'https://archive-api.open-meteo.com/v1/archive?latitude={lat}&longitude={long}&start_date={start_date}&end_date={end_date}&daily=temperature_2m_mean&timezone=auto'
 
 
     def _get_airports_dict(self):
         """Find all airports in the countries given in the config file"""
+        print = logger.info
 
         df = pd.read_csv(self.airports_url, header=None)
-        df_filtered = df[df[3].isin(self.countries)]
-        airports = df_filtered[[6,7]].to_dict(orient='records')
+        df_filtered = df[df[3].isin(self.countries)][[2, 6, 7]]
+        airports = df_filtered.set_index(2).T.to_dict('list')
         return airports
-
-    def _get_woeid(self):
-        print = logger.info
-        locations = {}
-        airports_dict = self._get_airports_dict()
-
-        for loc in airports_dict:
-            response = requests.get(self.weather_url + f'search/?lattlong={loc[6]}, {loc[7]}')
-            items = response.json()
-            if len(items) > 0 and items[0]['distance'] < 10000:
-                if items[0]['title'] not in locations.keys():
-                    locations[items[0]['title']] = {items[0]['latt_long']: items[0]['woeid']}
-                    print(f"Found latt/long for airport of {items[0]['title']}")
-        return locations
-
-    def _get_dates(self):
-        start_date = datetime.datetime.strptime(self.start_date, "%Y-%m-%d")
-        end_date = datetime.datetime.strptime(self.end_date, "%Y-%m-%d")
-        dates = [start_date+timedelta(days=x) for x in range(((end_date+timedelta(days=1))-start_date).days)]
-        return dates
 
     def _get_temperatures(self):
         print = logger.info
         temp_list = []
 
-        locations = self._get_woeid()
-        dates = self._get_dates()
+        airports = self._get_airports_dict()
 
-        for city, location in locations.items():
-            for latt_long, woeid in location.items():
-                temp = []
-                for day in dates:
-                    response = requests.get(self.weather_url + f'{woeid}/{day.year}/{day.month}/{day.day}/')
-                    items = response.json()
-                    noon_temp = items[int(len(items)/2)]['the_temp']
-                    if noon_temp:
-                        temp.append(noon_temp)
+        temp_list = []
 
-            temp_list.append({'city': city,
-                              'latt_long': latt_long,
-                              'avg_temp': round(np.mean(temp),2)})
-            print(f'Found temperature for {city}')
+        for k, v in airports.items():
+            response = requests.get(self.weather_url.format(lat=v[0], long=v[1], start_date=self.start_date, end_date=self.end_date))
+            items = response.json()
+
+            if 'daily' in items.keys():
+                avg_temp = round(np.mean(items['daily']['temperature_2m_mean']), 2)
+
+                temp_list.append({'city': k,
+                                  'latt_long': str(v[0]) + ',' + str(v[1]),
+                                  'avg_temp': avg_temp})
+
+            print(f'Found temperature for {k}')
         return temp_list
 
     def create_dataframe(self):
